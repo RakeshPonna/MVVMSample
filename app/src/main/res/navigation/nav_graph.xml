@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeFragment"
+    android:label="User"
+    app:startDestination="@id/userFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.rocky.mvvm.ui.home.users.UserFragment"
+        android:label="User"
+        tools:layout="@layout/user_fragment" />
+    <fragment
+        android:id="@+id/quotesFragment"
+        android:name="com.rocky.mvvm.ui.home.quotes.QuotesFragment"
+        android:label="quotes_fragment"
+        tools:layout="@layout/quotes_fragment" />
+</navigation>
